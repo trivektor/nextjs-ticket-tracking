@@ -1,11 +1,11 @@
 import { Fragment } from "react";
 
-const Index = () => {
+const Projects = () => {
   return (
     <Fragment>
-      Home page
+      Projects list
     </Fragment>
   );
 };
 
-export {Index as default};
+export {Projects as default};

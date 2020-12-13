@@ -13,7 +13,7 @@ const options = {
       return Promise.resolve(true);
     },
     redirect: async (url, baseUrl) => {
-      return Promise.resolve(baseUrl);
+      return Promise.resolve(`${baseUrl}/projects`);
     },
     session: async (session, user) => {
       return Promise.resolve(session);
