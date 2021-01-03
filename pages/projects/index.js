@@ -1,7 +1,4 @@
-import { useSession } from "next-auth/client";
-import {Protected} from "../components";
-
-import {Projects} from "../components";
+import {Protected, Projects} from "../../components";
 
 const ProjectsPage = () => {
   return (
