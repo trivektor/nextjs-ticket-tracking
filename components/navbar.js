@@ -1,4 +1,4 @@
-import { useSession } from "next-auth/client";
+import { useSession, signOut } from "next-auth/client";
 
 const Navbar = () => {
   const [session] = useSession();
@@ -18,6 +18,7 @@ const Navbar = () => {
         <div className="md:flex items-center">
           <div className="flex flex-col md:flex-row md:mx-6">
             <span className="my-1 text-sm text-white md:mx-4 md:my-0">{user.name}</span>
+            <a className="my-1 text-sm text-white md:mx-4 md:my-0" onClick={signOut}>Sign out</a>
           </div>
         </div>
       </div>
