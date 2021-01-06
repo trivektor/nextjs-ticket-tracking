@@ -13,17 +13,17 @@ const NewProject = () => {
           <h1 className="text-3xl font-bold leading-tight text-gray-900">New Project</h1>
         </div>
       </div>
-      <div className="max-w-7xl mx-auto py-12 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto">
-          <div className="shadow sm:rounded-md sm:overflow-hidden">
-            <div className="px-4 py-5 bg-white space-y-6 sm:p-6">
-              <div>
-                <label className="block text-sm font-medium text-gray-700">Name</label>
-                <input type="text" className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" />
-              </div>
-            </div>
+      <div className="container mx-auto p-5">
+        <form>
+          <div className="my-2">
+            <label>Name</label>
+            <input type="text" autoFocus className="p-2 border border-blue-700 rounded w-full" />
           </div>
-        </div>
+          <div className="my-4">
+            <label>Description</label>
+            <textarea className="p-2 border border-blue-700 rounded w-full" rows={4} />
+          </div>
+        </form>
       </div>
     </Protected>
   );
