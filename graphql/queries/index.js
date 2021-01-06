@@ -1,0 +1,1 @@
+export {default as ProjectsQuery} from './projects'

@@ -29,4 +29,4 @@ const NewProject = () => {
   );
 };
 
-export {NewProject as default};
+export {NewProject as default}
